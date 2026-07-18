@@ -10,16 +10,16 @@ class LovieCli < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lovieco/lovie/releases/download/lovie-cli/v0.1.0/lovie_0.1.0_darwin_amd64.tar.gz"
-      sha256 "1f39e92208a30fcddd178f4f918dbcbbe73d069be7147e873f4be7528ecf1ca6"
+      url "https://github.com/lovieco/homebrew-tap/releases/download/v0.1.0/lovie_0.1.0_darwin_amd64.tar.gz"
+      sha256 "62970060c517ef287596bf2d7714130093c9beca7f453224452e9b2169db8b10"
 
       define_method(:install) do
         bin.install "lovie"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lovieco/lovie/releases/download/lovie-cli/v0.1.0/lovie_0.1.0_darwin_arm64.tar.gz"
-      sha256 "39bc47eb42e565a71e4c67363082e239975cf368a853a43cb35a4b78cb129ec6"
+      url "https://github.com/lovieco/homebrew-tap/releases/download/v0.1.0/lovie_0.1.0_darwin_arm64.tar.gz"
+      sha256 "9b3e584a39e9b11a64a3000f0c12e4f4596e0d6ed5fc4828346f1a9186e97f0a"
 
       define_method(:install) do
         bin.install "lovie"
@@ -29,15 +29,15 @@ class LovieCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lovieco/lovie/releases/download/lovie-cli/v0.1.0/lovie_0.1.0_linux_amd64.tar.gz"
-      sha256 "d4749121695c2102ca9897f6bda5fed65e4d3039b3e0514ddf39932dfaf4ec9b"
+      url "https://github.com/lovieco/homebrew-tap/releases/download/v0.1.0/lovie_0.1.0_linux_amd64.tar.gz"
+      sha256 "1af7624934b3fefe2efd5bfbafbbac0ed3164f009a77066584ee6e1fe27ae687"
       define_method(:install) do
         bin.install "lovie"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lovieco/lovie/releases/download/lovie-cli/v0.1.0/lovie_0.1.0_linux_arm64.tar.gz"
-      sha256 "00396ae48865ab84036826d6791eba527cadec01c1ad2a308c5d50f5f2890b81"
+      url "https://github.com/lovieco/homebrew-tap/releases/download/v0.1.0/lovie_0.1.0_linux_arm64.tar.gz"
+      sha256 "1c8f87aa4c028e61ea0c4f9d3ad0e47683b1b377b3842e5f0daf03512ea0060e"
       define_method(:install) do
         bin.install "lovie"
       end
