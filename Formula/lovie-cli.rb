@@ -5,21 +5,21 @@
 class LovieCli < Formula
   desc "Run Lovie backend operations from your terminal"
   homepage "https://lovie.co"
-  version "2.2.1"
+  version "2.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lovieco/homebrew-tap/releases/download/v2.2.1/lovie_2.2.1_darwin_amd64.tar.gz"
-      sha256 "f8ffb44bb77f92f5f0fbfe05a68c11af2b52cd92fda732a4baf72fa398fc613a"
+      url "https://github.com/lovieco/homebrew-tap/releases/download/v2.2.2/lovie_2.2.2_darwin_amd64.tar.gz"
+      sha256 "2d26530a741267e691d75fd2a2f70a1cb4db878b77900d7536cf4198e737575b"
 
       define_method(:install) do
         bin.install "lovie"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lovieco/homebrew-tap/releases/download/v2.2.1/lovie_2.2.1_darwin_arm64.tar.gz"
-      sha256 "9093b9e8928b9793f7ba93a7a6df0a686354000418552d435277c8cd663cedab"
+      url "https://github.com/lovieco/homebrew-tap/releases/download/v2.2.2/lovie_2.2.2_darwin_arm64.tar.gz"
+      sha256 "4b93cc1b0b2e1db4bfc89e82343cfff58a667f9649bc0a5f192cdec29ec44ba7"
 
       define_method(:install) do
         bin.install "lovie"
@@ -29,15 +29,15 @@ class LovieCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lovieco/homebrew-tap/releases/download/v2.2.1/lovie_2.2.1_linux_amd64.tar.gz"
-      sha256 "4c0182fc813bdbd165d8e0a78dc8d31bf4b1d75be0f95d240cba34838a0adca6"
+      url "https://github.com/lovieco/homebrew-tap/releases/download/v2.2.2/lovie_2.2.2_linux_amd64.tar.gz"
+      sha256 "f92cf9c80fb583441c994d1289c73038e112a706935ded6ed99b394d7a099c16"
       define_method(:install) do
         bin.install "lovie"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lovieco/homebrew-tap/releases/download/v2.2.1/lovie_2.2.1_linux_arm64.tar.gz"
-      sha256 "b6a82ec62a51bfef7bc3440fe642ad2a3d3f35e3bd9b7b0f74450d3cce893dbd"
+      url "https://github.com/lovieco/homebrew-tap/releases/download/v2.2.2/lovie_2.2.2_linux_arm64.tar.gz"
+      sha256 "ccb80d1dce559a1415c878e873682cea6b03dccafdf3e6a7dc4a3ecc1727045a"
       define_method(:install) do
         bin.install "lovie"
       end
